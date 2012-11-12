@@ -16,8 +16,8 @@
 		F46F7EB916508F86002106E7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F46F7EB816508F86002106E7 /* Default.png */; };
 		F46F7EBB16508F86002106E7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F46F7EBA16508F86002106E7 /* Default@2x.png */; };
 		F46F7EBD16508F86002106E7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F46F7EBC16508F86002106E7 /* Default-568h@2x.png */; };
-		F46F7EC016508F86002106E7 /* SDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F46F7EBF16508F86002106E7 /* SDViewController.m */; };
-		F46F7EC316508F86002106E7 /* SDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F46F7EC116508F86002106E7 /* SDViewController.xib */; };
+		F46F7ED01650978B002106E7 /* SDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F46F7ECF1650978B002106E7 /* SDViewController.m */; };
+		F46F7ED316509919002106E7 /* SDView.m in Sources */ = {isa = PBXBuildFile; fileRef = F46F7ED216509919002106E7 /* SDView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,9 +34,10 @@
 		F46F7EB816508F86002106E7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		F46F7EBA16508F86002106E7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		F46F7EBC16508F86002106E7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		F46F7EBE16508F86002106E7 /* SDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDViewController.h; sourceTree = "<group>"; };
-		F46F7EBF16508F86002106E7 /* SDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDViewController.m; sourceTree = "<group>"; };
-		F46F7EC216508F86002106E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SDViewController.xib; sourceTree = "<group>"; };
+		F46F7ECE1650978B002106E7 /* SDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDViewController.h; sourceTree = "<group>"; };
+		F46F7ECF1650978B002106E7 /* SDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDViewController.m; sourceTree = "<group>"; };
+		F46F7ED116509919002106E7 /* SDView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDView.h; sourceTree = "<group>"; };
+		F46F7ED216509919002106E7 /* SDView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,10 +86,11 @@
 			children = (
 				F46F7EB516508F86002106E7 /* SDAppDelegate.h */,
 				F46F7EB616508F86002106E7 /* SDAppDelegate.m */,
-				F46F7EBE16508F86002106E7 /* SDViewController.h */,
-				F46F7EBF16508F86002106E7 /* SDViewController.m */,
-				F46F7EC116508F86002106E7 /* SDViewController.xib */,
 				F46F7EAD16508F85002106E7 /* Supporting Files */,
+				F46F7ECE1650978B002106E7 /* SDViewController.h */,
+				F46F7ECF1650978B002106E7 /* SDViewController.m */,
+				F46F7ED116509919002106E7 /* SDView.h */,
+				F46F7ED216509919002106E7 /* SDView.m */,
 			);
 			path = Nov15;
 			sourceTree = "<group>";
@@ -163,7 +165,6 @@
 				F46F7EB916508F86002106E7 /* Default.png in Resources */,
 				F46F7EBB16508F86002106E7 /* Default@2x.png in Resources */,
 				F46F7EBD16508F86002106E7 /* Default-568h@2x.png in Resources */,
-				F46F7EC316508F86002106E7 /* SDViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,7 +177,8 @@
 			files = (
 				F46F7EB316508F86002106E7 /* main.m in Sources */,
 				F46F7EB716508F86002106E7 /* SDAppDelegate.m in Sources */,
-				F46F7EC016508F86002106E7 /* SDViewController.m in Sources */,
+				F46F7ED01650978B002106E7 /* SDViewController.m in Sources */,
+				F46F7ED316509919002106E7 /* SDView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,14 +191,6 @@
 				F46F7EB016508F85002106E7 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		F46F7EC116508F86002106E7 /* SDViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F46F7EC216508F86002106E7 /* en */,
-			);
-			name = SDViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -293,6 +287,7 @@
 				F46F7EC816508F86002106E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
