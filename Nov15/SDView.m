@@ -15,6 +15,7 @@
 - (id) initWithFrame: (CGRect) frame controller: (SDViewController *) c {
     self = [super initWithFrame:frame];
     if (self) {
+        NSArray *colors = [[NSArray alloc] initWithObjects:[UIColor redColor], [UIColor greenColor],[UIColor blueColor], nil];
 		self.backgroundColor = [UIColor whiteColor];
 		viewController = c;
         textViews = [NSMutableArray arrayWithCapacity:10];
@@ -27,6 +28,7 @@
             UITextView *textView = [[UITextView alloc] initWithFrame: cellBounds];
 			textView.editable = NO;
 			textView.font = [UIFont fontWithName: @"Courier" 	size: 15];
+            textView.backgroundColor = [colors objectAtIndex:i%[colors count]];
 			[self addSubview: textView];
             [textViews addObject:textView];
         }
