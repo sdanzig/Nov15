@@ -11,7 +11,6 @@
 
 @interface SDView : UIView {
 	SDViewController *viewController;
-	NSMutableArray *textViews;
 }
 
 - (id) initWithFrame: (CGRect) frame controller: (SDViewController *) c;

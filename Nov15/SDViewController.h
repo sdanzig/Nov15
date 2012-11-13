@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SDViewController : UIViewController
+@interface SDViewController : UIViewController {
+    NSMutableArray *textViews;
+    UITextView *draggedTextView;
+    int origViewPos;
+    int newViewPos;
+    BOOL animating;
+    UIColor *oldColor;
+}
 
 @end
