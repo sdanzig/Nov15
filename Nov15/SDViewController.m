@@ -60,7 +60,7 @@
     [super viewWillAppear:animated];
     for (int i = 0; i < [textViews count]; i++) {
         UITextView *tv = [textViews objectAtIndex:i];
-        tv.text = [NSString stringWithFormat:@"test %d",i];
+        tv.text = [NSString stringWithFormat:@"Drag me! - %d",i];
     }
     //[self.view setNeedsDisplay];
 }
@@ -186,6 +186,7 @@
     
     //Describe what the animation should do.
     draggedTextView.backgroundColor = color;
+    
     [UIView commitAnimations];
 
 }
