@@ -28,6 +28,10 @@
     [viewController touchesMoved:touches withEvent:event];
 }
 
+- (void) touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event {
+    [viewController touchesCancelled:touches withEvent:event];
+}
+
 - (void) touchesEnded: (NSSet *) touches withEvent: (UIEvent *) event {
     [viewController touchesEnded:touches withEvent:event];
 }

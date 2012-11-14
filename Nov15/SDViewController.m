@@ -126,10 +126,10 @@
             CGRect tvFrame = tvBeingMoved.frame;
             if(i > newViewPos) {
                 // Move [textViews objectAtIndex:i] up
-                tvFrame.origin.y -= tvFrame.size.height;
+                tvFrame.origin.y -= tvFrame.size.height * (i-newViewPos);
             } else { // i < newViewPos
                 // Move [textViews objectAtIndex:i] down
-                tvFrame.origin.y += tvFrame.size.height;
+                tvFrame.origin.y += tvFrame.size.height * (newViewPos-i);
             }
             [UIView beginAnimations: nil context: NULL];
             
@@ -153,6 +153,11 @@
 //            break;
         }
     }
+}
+
+- (void) touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [self touchesEnded:touches withEvent:event];
 }
 
 - (void) touchesEnded: (NSSet *) touches withEvent: (UIEvent *) event
